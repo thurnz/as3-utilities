@@ -19,7 +19,7 @@ package  {
 			}
 			// check for "."
 			n1=s.indexOf(".");
-			b=(n1>0 && s.substr(-1)!="." && n0<s.lastIndexOf("."));
+			b=(n1>0 && s.lastIndexOf(".")<s.length-2 && n0<s.lastIndexOf("."));
 			for(var i:uint=0;i<s.length-1;i++){
 				if(s.substr(i,1)=="." && s.substr(i+1,1)=="."){
 					b=false;
